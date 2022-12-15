@@ -1,0 +1,5 @@
+SELECT *  FROM Executor ex
+  JOIN Employees em ON em.id = ex.tab_no
+  JOIN Department d ON d.id = em.department_id
+  JOIN Contract con ON con. id = ex.contract_id 
+  JOIN Customer cus ON cus. id = con.customer_id
